@@ -107,7 +107,7 @@ export default () => {
         html`
           <dialog open>
             <h1><i>Perflink</i></h1>
-            <h2 class="lite">Lite</h2>
+            <h2 class="lite">Webpack</h2>
             <h3>Live Javascript Benchmarking</h3>
             <p>
               Write scripts and race them. See results graphed out as you type.
