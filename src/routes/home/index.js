@@ -89,19 +89,15 @@ export default () => {
     <main className="app">
       ${!dialog &&
         html`
-          <${React.Suspense} fallback="Loading...">
-            <${Tests}
-              before=${before}
-              setBefore=${setBefore}
-              tests=${tests}
-              setTests=${setTests}
-              started=${started}
-              setStarted=${setStarted}
-            />
-          <//>
-          <${React.Suspense} fallback="Loading...">
-            <${Results} tests=${tests} />
-          <//>
+          <${Tests}
+            before=${before}
+            setBefore=${setBefore}
+            tests=${tests}
+            setTests=${setTests}
+            started=${started}
+            setStarted=${setStarted}
+          />
+          <${Results} tests=${tests} />
         `}
       ${dialog &&
         html`
