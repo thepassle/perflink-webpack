@@ -55,7 +55,7 @@
 `} />
       </button>
     </div>
-  `;let O;t.default=(({before:e,setBefore:t,tests:n,setTests:a,setStarted:r})=>(!O&&(O=function(e,t,n){var a;return function(){var r=this,i=arguments,o=n&&!a;clearTimeout(a),a=setTimeout(function(){a=null,n||e.apply(r,i)},t),o&&e.apply(r,i)}}(r,500)),html`
+  `;let O;t.default=({before:e,setBefore:t,tests:n,setTests:a,setStarted:r})=>(!O&&(O=function(e,t,n){var a;return function(){var r=this,i=arguments,o=function(){a=null,n||e.apply(r,i)},s=n&&!a;clearTimeout(a),a=setTimeout(o,t),s&&e.apply(r,i)}}(r,500)),html`
     <article className="tests">
       <div className="tests__header">
         <h3>Setup Code</h3>
@@ -108,4 +108,4 @@
           `)}
       </ul>
     </article>
-  `))}}]);
+  `)}}]);

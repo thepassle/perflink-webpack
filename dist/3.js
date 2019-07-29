@@ -35,7 +35,7 @@
     color: rgba(255, 255, 255, 0.8);
     font-weight: 200;
     padding: 0 0 3rem;
-  `;i.default=(({tests:e})=>html`
+  `;i.default=({tests:e})=>html`
   <aside className="graph">
     ${e.map((e=>(i,s)=>{const r=Math.max(...e.map(e=>e.median)),d=i.median?i.median/r*100:0;return html`
     <div className=${a}>
@@ -50,4 +50,4 @@
     </div>
   `})(e))}
   </aside>
-`)}}]);
+`}}]);
